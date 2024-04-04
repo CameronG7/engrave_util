@@ -230,16 +230,16 @@ function giveString() {
 	let engrave = "";
 	let engraveArray = [];
 
-	for (let i = 5; i >= 0; i--) 
+	for (let i = 0; i < letterArray.length; i++) 
 	{
 		engraveArray.push(`${letterArray[i]}-${UserNum}-${numberArray[start + i]}-N`);
 	};
+	console.log(engraveArray)
 
-	for (let i = 0; i < letterArray.length; i++) 
+	for (let i = 5; i >= 0; i--) 
 	{
 		engraveArray.push(`${letterArray[i]}-${UserNum}-${numberArray[start + i]}-F`);
 	};
-console.log(engraveArray)
 cityEl.val("");
 engraveArray.forEach(function (element, index) {
 
